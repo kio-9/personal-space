@@ -2,6 +2,7 @@ let questionObjList = [];
 let saveData = {answers: []};
 let currentIndex = null;
 let answeredIDList = [];
+let capsuleCount = 0;
 
 const questionText = document.getElementById("question-text");
 const skipButton = document.getElementById("skip-button");
@@ -46,7 +47,8 @@ saveButton.addEventListener("click", () => {
     const answerText = document.getElementById("reply");
     const timeCapsule = document.getElementById("timeCapsule");
     const favorite = document.getElementById("favorite");
-    const counter = document.getElementById("counter");
+    const questionCounter = document.getElementById("question-counter");
+    const capsuleCounter = document.getElementById("capsule-counter");
 
     if (!answerText.value){
         Swal.fire({
@@ -67,9 +69,13 @@ saveButton.addEventListener("click", () => {
         timeCapsule: timeCapsule.checked,
         fav: favorite.checked,
     };
+    if (timeCapsule.checked) {
+        capsuleCount += 1;
+    }
     saveData.answers.push(answer);
     answeredIDList.push(questionObjList[currentIndex].id);
-    counter.innerText = saveData.answers.length;
+    questionCounter.innerText = saveData.answers.length;
+    capsuleCounter.innerText = capsuleCount;
 
     Swal.fire({
         title: 'Success',

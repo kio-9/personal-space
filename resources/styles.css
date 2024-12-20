@@ -27,13 +27,18 @@ body {
     margin-bottom: 1rem;
 }
 
+.capsule {
+    color: goldenrod;
+}
+
 .counter {
     width: 125px;
     height: 125px;
-    margin: 2% 0;
+    margin: 2% 10px;
     padding: 5px;
     background-color: ghostwhite;
     border: 6px solid black;
+    display: inline-block;
 }
 
 .counter p {
