@@ -1,0 +1,82 @@
+body {
+    background: radial-gradient();
+    justify-items: center;
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+.title {
+    width: 100%;
+    background-color: coral;
+    margin-top: -22px;
+    padding-top: 50px;
+}
+
+.title h1 {
+    text-align: center;
+    font-family: "Caveat Brush", serif;
+    font-size: 5rem;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 20px;
+    color: blanchedalmond;
+}
+
+#reply {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.counter {
+    width: 150px;
+    height: 150px;
+    margin: 2% 0;
+    padding: 5px;
+    background-color: ghostwhite;
+    border: 6px solid black;
+}
+
+.counter p {
+    text-align: center;
+    font-family: "Caveat Brush", serif;
+    font-size: 1.5rem;
+}
+
+.counter .number{
+    margin-top: -2rem;
+    font-size: 5rem;
+}
+
+.card {
+    width: 60%;
+    border: 5px solid grey;
+    background-color: beige;
+    padding: 20px;
+    justify-items: center;
+    margin-bottom: 15px;
+}
+
+.card label {
+    align-self: last baseline;
+}
+
+.card .question {
+    font-family: "Fleur De Leah", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.card textarea {
+    font-size: 1.2rem;
+}
+
+.opt-container {
+    align-self: center;
+}
+
+.opt-container button{
+    margin: 0 10px;
+    width: 120px;
+}
